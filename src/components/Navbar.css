@@ -1,0 +1,63 @@
+:root {
+	--color-lasalle: #0824a4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  --navbar-height: 65px; /* Altura del navbar */
+  --logo-height: 50px; /* Altura del logo */
+  --mobile-padding: 20px; /* Espacio a la izquierda en móviles */
+  --tablet-padding: 30px; /* Espacio a la izquierda en tabletas */
+  --desktop-padding: 40px; /* Espacio a la izquierda en escritorios */
+
+  background-color: var(--color-lasalle);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 var(--mobile-padding);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-image {
+  height: var(--logo-height);
+  width: auto;
+  transition: opacity 0.3s ease;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .navbar-container {
+    padding-left: var(--tablet-padding) !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-container {
+    padding-left: var(--desktop-padding) !important;
+  }
+}
