@@ -1,5 +1,5 @@
-import { references } from "../utils/references";
-import "./Footer.css";
+import { references } from "../../utils/references";
+import "./Footer.module.css";
 
 const Footer: React.FC = () => (
   <footer className="footer">
