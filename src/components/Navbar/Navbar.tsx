@@ -1,15 +1,15 @@
 import React from "react";
-import "./Navbar.module.css";
+import styles from "./Navbar.module.css";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="navbar" aria-label="Barra de navegación principal">
-      <div className="navbar-container">
-        <div className="navbar-logo">
+    <nav className={styles.navbar} aria-label="Barra de navegación principal">
+      <div className={styles['navbar-container']}>
+        <div className={styles['navbar-logo']}>
           <img
             src="/ulasalle.webp"
             alt="Logo Universidad La Salle de Arequipa"
-            className="logo-image"
+            className={styles['logo-image']}
             width={48}
             height={48}
             loading="lazy"
